@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-labelledby="title">
+  <title>Justicia Argentina</title>
+  <rect width="320" height="180" fill="none"/>
+  <g fill="#5b6573" opacity=".22">
+    <path d="M160 26 72 62v12h176V62L160 26Z"/>
+    <path d="M84 84h18v54H84zm42 0h18v54h-18zm42 0h18v54h-18zm42 0h18v54h-18z"/>
+    <path d="M62 142h196v14H62z"/>
+  </g>
+  <text x="160" y="174" fill="#5b6573" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" opacity=".28">JUSTICIA ARGENTINA</text>
+</svg>

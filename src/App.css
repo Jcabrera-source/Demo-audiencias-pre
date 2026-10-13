@@ -1,0 +1,139 @@
+.app-shell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #dbe4eb;
+}
+
+.app-background-image {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.app-shell::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background: rgb(7 27 43 / 24%);
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.institutional-footer {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  width: min(1200px, calc(100% - 48px));
+  min-height: 0;
+  margin: 0 auto 24px;
+  padding: 18px 24px;
+  border-radius: 16px;
+  background: #06265d;
+  color: white;
+}
+
+.institutional-footer__inner {
+  display: grid;
+  grid-template-columns: minmax(240px, 1.15fr) minmax(260px, 1fr) 120px;
+  gap: 48px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.institutional-footer__brand img {
+  display: block;
+  width: 112px;
+  max-width: 100%;
+  height: 112px;
+  object-fit: contain;
+  margin-bottom: 0;
+  padding: 8px;
+  border-radius: 10px;
+  background: white;
+}
+
+.institutional-footer__links {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding-top: 14px;
+}
+
+.institutional-footer__links a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.institutional-footer__links a:hover {
+  color: #f0ce70;
+  text-decoration: underline;
+}
+
+.institutional-footer__qr {
+  display: grid;
+  place-items: center;
+  width: 106px;
+  height: 106px;
+  margin-top: 14px;
+  border: 5px solid white;
+  background:
+    linear-gradient(45deg, #111 25%, transparent 25%, transparent 75%, #111 75%),
+    linear-gradient(45deg, #111 25%, transparent 25%, transparent 75%, #111 75%);
+  background-position: 0 0, 9px 9px;
+  background-size: 18px 18px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.institutional-footer__qr span {
+  padding: 8px 5px;
+  background: white;
+  color: #06265d;
+}
+
+@media (max-width: 900px) {
+  .institutional-footer__inner {
+    grid-template-columns: minmax(200px, 1fr) minmax(220px, 1fr);
+    gap: 28px;
+  }
+
+  .institutional-footer__qr {
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .institutional-footer {
+    width: calc(100% - 24px);
+    padding: 30px 18px;
+  }
+
+  .institutional-footer__inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .institutional-footer__links {
+    padding-top: 0;
+  }
+
+  .institutional-footer__qr {
+    margin-top: 0;
+  }
+}

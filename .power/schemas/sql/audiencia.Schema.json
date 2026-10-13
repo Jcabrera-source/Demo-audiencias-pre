@@ -1,0 +1,757 @@
+{
+  "name": "[dbo].[Audiencia]",
+  "title": "[dbo].[Audiencia]",
+  "x-ms-permission": "read-write",
+  "x-ms-capabilities": {
+    "sortRestrictions": {
+      "sortable": true
+    },
+    "filterRestrictions": {
+      "filterable": true
+    },
+    "selectRestrictions": {
+      "selectable": true
+    },
+    "countRestrictions": {
+      "countable": true
+    },
+    "filterFunctionSupport": [
+      "lt",
+      "le",
+      "eq",
+      "ne",
+      "gt",
+      "ge",
+      "min",
+      "max",
+      "countdistinct",
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "mod",
+      "negate",
+      "now",
+      "not",
+      "and",
+      "or",
+      "day",
+      "month",
+      "year",
+      "hour",
+      "minute",
+      "second",
+      "date",
+      "time",
+      "totaloffsetminutes",
+      "totalseconds",
+      "round",
+      "floor",
+      "ceiling",
+      "contains",
+      "startswith",
+      "endswith",
+      "length",
+      "indexof",
+      "replace",
+      "substring",
+      "substringof",
+      "tolower",
+      "toupper",
+      "trim",
+      "concat",
+      "sum",
+      "min",
+      "max",
+      "average",
+      "countdistinct",
+      "null"
+    ]
+  },
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "Fecha",
+        "HoraInicio",
+        "TituloAudiencia",
+        "IdCausa",
+        "Estado",
+        "Privada",
+        "Menores",
+        "IdAudienciaAugusta"
+      ],
+      "properties": {
+        "IdAudiencia": {
+          "title": "IdAudiencia",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "add",
+              "sub",
+              "mul",
+              "div",
+              "mod",
+              "negate",
+              "sum",
+              "average"
+            ]
+          },
+          "type": "integer",
+          "format": "int64",
+          "minimum": -9223372036854776000,
+          "maximum": 9223372036854776000,
+          "x-ms-keyOrder": 1,
+          "x-ms-keyType": "primary",
+          "x-ms-permission": "read-only",
+          "x-ms-sort": "none"
+        },
+        "Fecha": {
+          "title": "Fecha",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "day",
+              "month",
+              "year",
+              "date",
+              "time"
+            ]
+          },
+          "type": "string",
+          "format": "date",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "HoraInicio": {
+          "title": "HoraInicio",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "hour",
+              "minute",
+              "second"
+            ]
+          },
+          "type": "string",
+          "format": "time",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "HoraFin": {
+          "title": "HoraFin",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "hour",
+              "minute",
+              "second"
+            ]
+          },
+          "type": "string",
+          "format": "time",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "TituloAudiencia": {
+          "title": "TituloAudiencia",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 300,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "IdCausa": {
+          "title": "IdCausa",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "add",
+              "sub",
+              "mul",
+              "div",
+              "mod",
+              "negate",
+              "sum",
+              "average"
+            ]
+          },
+          "type": "integer",
+          "format": "int64",
+          "minimum": -9223372036854776000,
+          "maximum": 9223372036854776000,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "CodBarras": {
+          "title": "CodBarras",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "add",
+              "sub",
+              "mul",
+              "div",
+              "mod",
+              "negate",
+              "sum",
+              "average"
+            ]
+          },
+          "type": "integer",
+          "format": "int64",
+          "minimum": -9223372036854776000,
+          "maximum": 9223372036854776000,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "OrganizadorUser": {
+          "title": "OrganizadorUser",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "ObjectIdOrganizador": {
+          "title": "ObjectIdOrganizador",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Estado": {
+          "title": "Estado",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 50,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Privada": {
+          "title": "Privada",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "not",
+              "and",
+              "or"
+            ]
+          },
+          "type": "boolean",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Menores": {
+          "title": "Menores",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "not",
+              "and",
+              "or"
+            ]
+          },
+          "type": "boolean",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "RequiereValidacion": {
+          "title": "RequiereValidacion",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "not",
+              "and",
+              "or"
+            ]
+          },
+          "type": "boolean",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Notas": {
+          "title": "Notas",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "IdAudienciaTeams": {
+          "title": "IdAudienciaTeams",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "ThreadIdTeams": {
+          "title": "ThreadIdTeams",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Archivos": {
+          "title": "Archivos",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Acta": {
+          "title": "Acta",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "TipoAudiencia": {
+          "title": "TipoAudiencia",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 100,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "EventIdTeams": {
+          "title": "EventIdTeams",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "MeetingIdTeams": {
+          "title": "MeetingIdTeams",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "IdAudienciaAugusta": {
+          "title": "IdAudienciaAugusta",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "add",
+              "sub",
+              "mul",
+              "div",
+              "mod",
+              "negate",
+              "sum",
+              "average"
+            ]
+          },
+          "type": "integer",
+          "format": "int64",
+          "minimum": -9223372036854776000,
+          "maximum": 9223372036854776000,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "postAudienciaApp": {
+          "title": "postAudienciaApp",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        }
+      }
+    },
+    "x-ms-permission": "read-write"
+  },
+  "x-ms-connection-version": "v2",
+  "x-ms-model-name-suffix": ""
+}

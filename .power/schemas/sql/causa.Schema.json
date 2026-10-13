@@ -1,0 +1,439 @@
+{
+  "name": "[dbo].[Causa]",
+  "title": "[dbo].[Causa]",
+  "x-ms-permission": "read-write",
+  "x-ms-capabilities": {
+    "sortRestrictions": {
+      "sortable": true
+    },
+    "filterRestrictions": {
+      "filterable": true
+    },
+    "selectRestrictions": {
+      "selectable": true
+    },
+    "countRestrictions": {
+      "countable": true
+    },
+    "filterFunctionSupport": [
+      "lt",
+      "le",
+      "eq",
+      "ne",
+      "gt",
+      "ge",
+      "min",
+      "max",
+      "countdistinct",
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "mod",
+      "negate",
+      "now",
+      "not",
+      "and",
+      "or",
+      "day",
+      "month",
+      "year",
+      "hour",
+      "minute",
+      "second",
+      "date",
+      "time",
+      "totaloffsetminutes",
+      "totalseconds",
+      "round",
+      "floor",
+      "ceiling",
+      "contains",
+      "startswith",
+      "endswith",
+      "length",
+      "indexof",
+      "replace",
+      "substring",
+      "substringof",
+      "tolower",
+      "toupper",
+      "trim",
+      "concat",
+      "sum",
+      "min",
+      "max",
+      "average",
+      "countdistinct",
+      "null"
+    ]
+  },
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "IdCausaAugusta",
+        "IdOrg",
+        "NombreOrganismo",
+        "Prefijo",
+        "Numero",
+        "Sufijo",
+        "Caratula"
+      ],
+      "properties": {
+        "IdCausa": {
+          "title": "IdCausa",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "add",
+              "sub",
+              "mul",
+              "div",
+              "mod",
+              "negate",
+              "sum",
+              "average"
+            ]
+          },
+          "type": "integer",
+          "format": "int64",
+          "minimum": -9223372036854776000,
+          "maximum": 9223372036854776000,
+          "x-ms-keyOrder": 1,
+          "x-ms-keyType": "primary",
+          "x-ms-permission": "read-only",
+          "x-ms-sort": "none"
+        },
+        "IdCausaAugusta": {
+          "title": "IdCausaAugusta",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "add",
+              "sub",
+              "mul",
+              "div",
+              "mod",
+              "negate",
+              "sum",
+              "average"
+            ]
+          },
+          "type": "integer",
+          "format": "int64",
+          "minimum": -9223372036854776000,
+          "maximum": 9223372036854776000,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "IdOrg": {
+          "title": "IdOrg",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "add",
+              "sub",
+              "mul",
+              "div",
+              "mod",
+              "negate",
+              "sum",
+              "average"
+            ]
+          },
+          "type": "integer",
+          "format": "int64",
+          "minimum": -9223372036854776000,
+          "maximum": 9223372036854776000,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "NombreOrganismo": {
+          "title": "NombreOrganismo",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 200,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Prefijo": {
+          "title": "Prefijo",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 20,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Numero": {
+          "title": "Numero",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 50,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Sufijo": {
+          "title": "Sufijo",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 20,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Caratula": {
+          "title": "Caratula",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 500,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Estado": {
+          "title": "Estado",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 50,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "LocalidadJuzgado": {
+          "title": "LocalidadJuzgado",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 200,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "IdUnicoCausa": {
+          "title": "IdUnicoCausa",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "format": "guid",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        }
+      }
+    },
+    "x-ms-permission": "read-write"
+  },
+  "x-ms-connection-version": "v2",
+  "x-ms-model-name-suffix": ""
+}

@@ -1,0 +1,566 @@
+{
+  "name": "[dbo].[Asistente]",
+  "title": "[dbo].[Asistente]",
+  "x-ms-permission": "read-write",
+  "x-ms-capabilities": {
+    "sortRestrictions": {
+      "sortable": true
+    },
+    "filterRestrictions": {
+      "filterable": true
+    },
+    "selectRestrictions": {
+      "selectable": true
+    },
+    "countRestrictions": {
+      "countable": true
+    },
+    "filterFunctionSupport": [
+      "lt",
+      "le",
+      "eq",
+      "ne",
+      "gt",
+      "ge",
+      "min",
+      "max",
+      "countdistinct",
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "mod",
+      "negate",
+      "now",
+      "not",
+      "and",
+      "or",
+      "day",
+      "month",
+      "year",
+      "hour",
+      "minute",
+      "second",
+      "date",
+      "time",
+      "totaloffsetminutes",
+      "totalseconds",
+      "round",
+      "floor",
+      "ceiling",
+      "contains",
+      "startswith",
+      "endswith",
+      "length",
+      "indexof",
+      "replace",
+      "substring",
+      "substringof",
+      "tolower",
+      "toupper",
+      "trim",
+      "concat",
+      "sum",
+      "min",
+      "max",
+      "average",
+      "countdistinct",
+      "null"
+    ]
+  },
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "Nombre",
+        "EsAbogado",
+        "IdAudiencia"
+      ],
+      "properties": {
+        "IdAsistente": {
+          "title": "IdAsistente",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "add",
+              "sub",
+              "mul",
+              "div",
+              "mod",
+              "negate",
+              "sum",
+              "average"
+            ]
+          },
+          "type": "integer",
+          "format": "int64",
+          "minimum": -9223372036854776000,
+          "maximum": 9223372036854776000,
+          "x-ms-keyOrder": 1,
+          "x-ms-keyType": "primary",
+          "x-ms-permission": "read-only",
+          "x-ms-sort": "none"
+        },
+        "Nombre": {
+          "title": "Nombre",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 200,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "DNI": {
+          "title": "DNI",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 50,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "CUIT": {
+          "title": "CUIT",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 50,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Genero": {
+          "title": "Genero",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 20,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Email": {
+          "title": "Email",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 200,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "DomicilioElectronico": {
+          "title": "DomicilioElectronico",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 200,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Rol": {
+          "title": "Rol",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 100,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Caracter": {
+          "title": "Caracter",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 100,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "EsAbogado": {
+          "title": "EsAbogado",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "not",
+              "and",
+              "or"
+            ]
+          },
+          "type": "boolean",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "IdAudiencia": {
+          "title": "IdAudiencia",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "add",
+              "sub",
+              "mul",
+              "div",
+              "mod",
+              "negate",
+              "sum",
+              "average"
+            ]
+          },
+          "type": "integer",
+          "format": "int64",
+          "minimum": -9223372036854776000,
+          "maximum": 9223372036854776000,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "ValidacionRenaper": {
+          "title": "ValidacionRenaper",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "not",
+              "and",
+              "or"
+            ]
+          },
+          "type": "boolean",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "ImagenValidacion": {
+          "title": "ImagenValidacion",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Presente": {
+          "title": "Presente",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "not",
+              "and",
+              "or"
+            ]
+          },
+          "type": "boolean",
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "TipoAcceso": {
+          "title": "TipoAcceso",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 50,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        },
+        "Origen": {
+          "title": "Origen",
+          "x-ms-capabilities": {
+            "filterFunctions": [
+              "lt",
+              "le",
+              "eq",
+              "ne",
+              "gt",
+              "ge",
+              "min",
+              "max",
+              "countdistinct",
+              "contains",
+              "startswith",
+              "endswith",
+              "length",
+              "indexof",
+              "replace",
+              "substring",
+              "substringof",
+              "tolower",
+              "toupper",
+              "trim",
+              "concat"
+            ]
+          },
+          "type": "string",
+          "maxLength": 50,
+          "x-ms-permission": "read-write",
+          "x-ms-sort": "none"
+        }
+      }
+    },
+    "x-ms-permission": "read-write"
+  },
+  "x-ms-connection-version": "v2",
+  "x-ms-model-name-suffix": ""
+}
